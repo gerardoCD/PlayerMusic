@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20A49C37D9DB13A7419C98FFCB2C0886 /* ContentLoadingPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF8E9CAE7322744025BF38AC2C0366 /* ContentLoadingPolicy.swift */; };
+		20AEB5A1CF7EE431948F9DA69CB5D926 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90999B98C1E22AFB8403E65DC59C32A5 /* Buildable.swift */; };
+		2C57CF8EF098172064E20C33E3D237A7 /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197AD30F875C84CA1D9D0A76C95C088 /* Pager.swift */; };
+		36D605AF133989B98F06BA3D20AB35A5 /* PagerContent+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B186CF0495C066518FCA66AB56E55 /* PagerContent+Helper.swift */; };
+		3712162CB999FF1D6FFDE2C5F94E8D76 /* PagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8DF9737CFCD2539C16C35E227EBBD /* PagerModel.swift */; };
+		3AA22165E3CFE1068FF6A7BA96A27580 /* OnDeactivateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77C8CFF97860799CA211F5B4A44723 /* OnDeactivateModifier.swift */; };
+		3B28157B46D360F54D4870ADA7F13502 /* SwiftUIPager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE30084678A536D094E53C30BF242B0 /* SwiftUIPager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404C3C3201C28FE5BA45AACBD449E5E7 /* SwiftUIPager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DEC3628613B8CCA76964C76BBDBAFD /* SwiftUIPager-dummy.m */; };
+		46F147214D28A6C9943C9016C0F1EC8B /* PagingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A885BA59AF34780D5C52C7F3CB6B6 /* PagingAnimation.swift */; };
+		4EE7F78A3334CCCEFF7DFBD2386F0935 /* Pods-PlayerMusic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F1A23D7CA169DBE2850D937FF2FCC22 /* Pods-PlayerMusic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6589224F68BD8C4B9A87408A65757216 /* CGPoint+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE0C487CCCD18910FD2620C8B2593F /* CGPoint+Angle.swift */; };
+		698A68383AD2239CB270D74F49D0FA79 /* PositionAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6EE732DD797829E428FC7F1F207C3 /* PositionAlignment.swift */; };
+		6BBD9CA1C36D0E9B689DBA23F0B2F0E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6FE3B08C55813CD047DCB947B29239AF /* View+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3757E1D9B7E2A650988E4413D7FBB28E /* View+Helper.swift */; };
+		749AB7E684EAC8AFAA1257B356F4662C /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AEA2A009FC1AB689D4248C555329E2 /* SwipeDirection.swift */; };
+		888A83E9C070165255D713BF92BED980 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		88CB0054E43199211F46A3DD174476FD /* SwipeInteractionArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED46778C9F136C868C9A3403B474E357 /* SwipeInteractionArea.swift */; };
+		9697DBAFE7C1CD1AF10DB1D26B0EE817 /* PagerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E6D96818958D4C2D1F69B5E1417F50 /* PagerContent.swift */; };
+		A79079D2471C0ACE1B2C7ABCED183125 /* PaginationSensitivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1707ED82AE8B3DD0E6A605E3279A1 /* PaginationSensitivity.swift */; };
+		BA639DC0C14F1621524D5DD5B974BBDC /* Pods-PlayerMusic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CCCEE2BD9E0E9EADD5DD67EB7A9F47 /* Pods-PlayerMusic-dummy.m */; };
+		C75C95FFD747C464EDA06BF4377C07BD /* PagerContent+Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8522B261D9FDA42549336D1128246034 /* PagerContent+Buildable.swift */; };
+		DFB5FCD746B24E2447FEE17CA5BC9207 /* PageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990E278379A08540B33EBBD41EF7A99 /* PageWrapper.swift */; };
+		E02D7ECEFACECD66EA754A4BCE4EB1B8 /* GesturePriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2C467598452B2FAB9189795F8B56A /* GesturePriority.swift */; };
+		F83DE9763125FEC28AD897D7D0AFEB4D /* Pager+Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593002AE535808F0D9B56679552362D3 /* Pager+Buildable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38F228A3788ADDC3AC958F4C3419C502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EDD561B01B453B33504B0EACB2107CC;
+			remoteInfo = SwiftUIPager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1197AD30F875C84CA1D9D0A76C95C088 /* Pager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pager.swift; path = Sources/SwiftUIPager/Pager.swift; sourceTree = "<group>"; };
+		16E6D96818958D4C2D1F69B5E1417F50 /* PagerContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerContent.swift; path = Sources/SwiftUIPager/PagerContent.swift; sourceTree = "<group>"; };
+		21EC2750DC34D2A63607F2512F9EE1DD /* Pods_PlayerMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PlayerMusic.framework; path = "Pods-PlayerMusic.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CCCEE2BD9E0E9EADD5DD67EB7A9F47 /* Pods-PlayerMusic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PlayerMusic-dummy.m"; sourceTree = "<group>"; };
+		27807A492FFC3A80A160722DCD09429F /* SwiftUIPager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftUIPager-prefix.pch"; sourceTree = "<group>"; };
+		2E77C8CFF97860799CA211F5B4A44723 /* OnDeactivateModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnDeactivateModifier.swift; path = Sources/SwiftUIPager/Helpers/OnDeactivateModifier.swift; sourceTree = "<group>"; };
+		30B3877BBA2B9D44DE1625881195630F /* Pods-PlayerMusic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PlayerMusic-Info.plist"; sourceTree = "<group>"; };
+		3757E1D9B7E2A650988E4413D7FBB28E /* View+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+Helper.swift"; path = "Sources/SwiftUIPager/Helpers/View+Helper.swift"; sourceTree = "<group>"; };
+		4DF1707ED82AE8B3DD0E6A605E3279A1 /* PaginationSensitivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaginationSensitivity.swift; path = Sources/SwiftUIPager/PageConfiguration/PaginationSensitivity.swift; sourceTree = "<group>"; };
+		593002AE535808F0D9B56679552362D3 /* Pager+Buildable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Pager+Buildable.swift"; path = "Sources/SwiftUIPager/Pager+Buildable.swift"; sourceTree = "<group>"; };
+		5F1A23D7CA169DBE2850D937FF2FCC22 /* Pods-PlayerMusic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PlayerMusic-umbrella.h"; sourceTree = "<group>"; };
+		6137D39EB5C0C4E77C2EFD41693AC644 /* Pods-PlayerMusic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PlayerMusic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		62F6EE732DD797829E428FC7F1F207C3 /* PositionAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAlignment.swift; path = Sources/SwiftUIPager/PageConfiguration/PositionAlignment.swift; sourceTree = "<group>"; };
+		66FD9E1614E4A35833BE0DBD3C937C13 /* SwiftUIPager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUIPager.release.xcconfig; sourceTree = "<group>"; };
+		6B0A32CCD2FF62CB81597A6E918AC2EF /* Pods-PlayerMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlayerMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		6C14EBF17F5D7196FD2EB058246F90FF /* Pods-PlayerMusic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PlayerMusic-frameworks.sh"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7AC7FD906EB457DC4F4BD6253E6C9E51 /* SwiftUIPager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUIPager.debug.xcconfig; sourceTree = "<group>"; };
+		7B72782526F4201CBF8ACC83ECCC0560 /* Pods-PlayerMusic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PlayerMusic.modulemap"; sourceTree = "<group>"; };
+		8522B261D9FDA42549336D1128246034 /* PagerContent+Buildable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PagerContent+Buildable.swift"; path = "Sources/SwiftUIPager/PagerContent+Buildable.swift"; sourceTree = "<group>"; };
+		8990E278379A08540B33EBBD41EF7A99 /* PageWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageWrapper.swift; path = Sources/SwiftUIPager/PageWrapper.swift; sourceTree = "<group>"; };
+		8DE30084678A536D094E53C30BF242B0 /* SwiftUIPager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftUIPager-umbrella.h"; sourceTree = "<group>"; };
+		90999B98C1E22AFB8403E65DC59C32A5 /* Buildable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buildable.swift; path = Sources/SwiftUIPager/Helpers/Buildable.swift; sourceTree = "<group>"; };
+		91DEC3628613B8CCA76964C76BBDBAFD /* SwiftUIPager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftUIPager-dummy.m"; sourceTree = "<group>"; };
+		94CF8E9CAE7322744025BF38AC2C0366 /* ContentLoadingPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentLoadingPolicy.swift; path = Sources/SwiftUIPager/PageConfiguration/ContentLoadingPolicy.swift; sourceTree = "<group>"; };
+		94F8DF9737CFCD2539C16C35E227EBBD /* PagerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerModel.swift; path = Sources/SwiftUIPager/PagerModel.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0E2C467598452B2FAB9189795F8B56A /* GesturePriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GesturePriority.swift; path = Sources/SwiftUIPager/PageConfiguration/GesturePriority.swift; sourceTree = "<group>"; };
+		A8A81AAD1A3FE68B5CA99C0DFCEDEC98 /* Pods-PlayerMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlayerMusic.release.xcconfig"; sourceTree = "<group>"; };
+		AF8CA00F566EAAF6F7E5877700D079C1 /* Pods-PlayerMusic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PlayerMusic-acknowledgements.plist"; sourceTree = "<group>"; };
+		B2C5488A9025C2A349557BB274E8C0E8 /* SwiftUIPager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftUIPager.modulemap; sourceTree = "<group>"; };
+		CEFADEFFE844C3B51AFB0AFC07EDEB57 /* SwiftUIPager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftUIPager-Info.plist"; sourceTree = "<group>"; };
+		D5AEA2A009FC1AB689D4248C555329E2 /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwiftUIPager/PageConfiguration/SwipeDirection.swift; sourceTree = "<group>"; };
+		D66B186CF0495C066518FCA66AB56E55 /* PagerContent+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PagerContent+Helper.swift"; path = "Sources/SwiftUIPager/PagerContent+Helper.swift"; sourceTree = "<group>"; };
+		DAFE0C487CCCD18910FD2620C8B2593F /* CGPoint+Angle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Angle.swift"; path = "Sources/SwiftUIPager/Helpers/CGPoint+Angle.swift"; sourceTree = "<group>"; };
+		E42A885BA59AF34780D5C52C7F3CB6B6 /* PagingAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingAnimation.swift; path = Sources/SwiftUIPager/PageConfiguration/PagingAnimation.swift; sourceTree = "<group>"; };
+		ED46778C9F136C868C9A3403B474E357 /* SwipeInteractionArea.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractionArea.swift; path = Sources/SwiftUIPager/PageConfiguration/SwipeInteractionArea.swift; sourceTree = "<group>"; };
+		EE18735978C1FD3A42D4D3D0356F3CA6 /* SwiftUIPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftUIPager.framework; path = SwiftUIPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACEBD0E2AD1E6D71D4D8040AA8D86E42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888A83E9C070165255D713BF92BED980 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1C684FCC49EF08667B27D583E8BCA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBD9CA1C36D0E9B689DBA23F0B2F0E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11B7AC0D7A1F2F3D35F3D4A74217DC8C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2859EFFFC5251E06339F07D6775EBA7 /* Pods-PlayerMusic */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2D1A3BC4BD6969344F61A94B64B52E94 /* SwiftUIPager */ = {
+			isa = PBXGroup;
+			children = (
+				90999B98C1E22AFB8403E65DC59C32A5 /* Buildable.swift */,
+				DAFE0C487CCCD18910FD2620C8B2593F /* CGPoint+Angle.swift */,
+				94CF8E9CAE7322744025BF38AC2C0366 /* ContentLoadingPolicy.swift */,
+				A0E2C467598452B2FAB9189795F8B56A /* GesturePriority.swift */,
+				2E77C8CFF97860799CA211F5B4A44723 /* OnDeactivateModifier.swift */,
+				1197AD30F875C84CA1D9D0A76C95C088 /* Pager.swift */,
+				593002AE535808F0D9B56679552362D3 /* Pager+Buildable.swift */,
+				16E6D96818958D4C2D1F69B5E1417F50 /* PagerContent.swift */,
+				8522B261D9FDA42549336D1128246034 /* PagerContent+Buildable.swift */,
+				D66B186CF0495C066518FCA66AB56E55 /* PagerContent+Helper.swift */,
+				94F8DF9737CFCD2539C16C35E227EBBD /* PagerModel.swift */,
+				8990E278379A08540B33EBBD41EF7A99 /* PageWrapper.swift */,
+				4DF1707ED82AE8B3DD0E6A605E3279A1 /* PaginationSensitivity.swift */,
+				E42A885BA59AF34780D5C52C7F3CB6B6 /* PagingAnimation.swift */,
+				62F6EE732DD797829E428FC7F1F207C3 /* PositionAlignment.swift */,
+				D5AEA2A009FC1AB689D4248C555329E2 /* SwipeDirection.swift */,
+				ED46778C9F136C868C9A3403B474E357 /* SwipeInteractionArea.swift */,
+				3757E1D9B7E2A650988E4413D7FBB28E /* View+Helper.swift */,
+				E5F306445087623C774105FA6258C3DC /* Support Files */,
+			);
+			name = SwiftUIPager;
+			path = SwiftUIPager;
+			sourceTree = "<group>";
+		};
+		3E8C19BD2EE61609EA31E6B49AD60246 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D1A3BC4BD6969344F61A94B64B52E94 /* SwiftUIPager */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8D437AA1012C7B66B635B1BB73696B24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21EC2750DC34D2A63607F2512F9EE1DD /* Pods_PlayerMusic.framework */,
+				EE18735978C1FD3A42D4D3D0356F3CA6 /* SwiftUIPager.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3E8C19BD2EE61609EA31E6B49AD60246 /* Pods */,
+				8D437AA1012C7B66B635B1BB73696B24 /* Products */,
+				11B7AC0D7A1F2F3D35F3D4A74217DC8C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2859EFFFC5251E06339F07D6775EBA7 /* Pods-PlayerMusic */ = {
+			isa = PBXGroup;
+			children = (
+				7B72782526F4201CBF8ACC83ECCC0560 /* Pods-PlayerMusic.modulemap */,
+				6137D39EB5C0C4E77C2EFD41693AC644 /* Pods-PlayerMusic-acknowledgements.markdown */,
+				AF8CA00F566EAAF6F7E5877700D079C1 /* Pods-PlayerMusic-acknowledgements.plist */,
+				22CCCEE2BD9E0E9EADD5DD67EB7A9F47 /* Pods-PlayerMusic-dummy.m */,
+				6C14EBF17F5D7196FD2EB058246F90FF /* Pods-PlayerMusic-frameworks.sh */,
+				30B3877BBA2B9D44DE1625881195630F /* Pods-PlayerMusic-Info.plist */,
+				5F1A23D7CA169DBE2850D937FF2FCC22 /* Pods-PlayerMusic-umbrella.h */,
+				6B0A32CCD2FF62CB81597A6E918AC2EF /* Pods-PlayerMusic.debug.xcconfig */,
+				A8A81AAD1A3FE68B5CA99C0DFCEDEC98 /* Pods-PlayerMusic.release.xcconfig */,
+			);
+			name = "Pods-PlayerMusic";
+			path = "Target Support Files/Pods-PlayerMusic";
+			sourceTree = "<group>";
+		};
+		E5F306445087623C774105FA6258C3DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2C5488A9025C2A349557BB274E8C0E8 /* SwiftUIPager.modulemap */,
+				91DEC3628613B8CCA76964C76BBDBAFD /* SwiftUIPager-dummy.m */,
+				CEFADEFFE844C3B51AFB0AFC07EDEB57 /* SwiftUIPager-Info.plist */,
+				27807A492FFC3A80A160722DCD09429F /* SwiftUIPager-prefix.pch */,
+				8DE30084678A536D094E53C30BF242B0 /* SwiftUIPager-umbrella.h */,
+				7AC7FD906EB457DC4F4BD6253E6C9E51 /* SwiftUIPager.debug.xcconfig */,
+				66FD9E1614E4A35833BE0DBD3C937C13 /* SwiftUIPager.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftUIPager";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1084248624432A27B37BB8EDF4A2953F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B28157B46D360F54D4870ADA7F13502 /* SwiftUIPager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306C7A644222878A1DDF2BED1983DA7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EE7F78A3334CCCEFF7DFBD2386F0935 /* Pods-PlayerMusic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		222FBAD0420810BEBAF41F7DD729437E /* Pods-PlayerMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9B74BF343CA68CB27A448BDA6821C35 /* Build configuration list for PBXNativeTarget "Pods-PlayerMusic" */;
+			buildPhases = (
+				306C7A644222878A1DDF2BED1983DA7E /* Headers */,
+				F65FD138706F7350304345E951624F83 /* Sources */,
+				ACEBD0E2AD1E6D71D4D8040AA8D86E42 /* Frameworks */,
+				8F3FA0A10AED590B35311761D18E9247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F17FC146EF0DD44050ABDF0961211E99 /* PBXTargetDependency */,
+			);
+			name = "Pods-PlayerMusic";
+			productName = "Pods-PlayerMusic";
+			productReference = 21EC2750DC34D2A63607F2512F9EE1DD /* Pods_PlayerMusic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7EDD561B01B453B33504B0EACB2107CC /* SwiftUIPager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91B3FC2F5DB2DC50E5922EECD77E7EAD /* Build configuration list for PBXNativeTarget "SwiftUIPager" */;
+			buildPhases = (
+				1084248624432A27B37BB8EDF4A2953F /* Headers */,
+				1B8F8B53F8D15F0D3BF5C1A29D063C11 /* Sources */,
+				FC1C684FCC49EF08667B27D583E8BCA9 /* Frameworks */,
+				2CC090F470FFD102620CD8A34A1AA6A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIPager;
+			productName = SwiftUIPager;
+			productReference = EE18735978C1FD3A42D4D3D0356F3CA6 /* SwiftUIPager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8D437AA1012C7B66B635B1BB73696B24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				222FBAD0420810BEBAF41F7DD729437E /* Pods-PlayerMusic */,
+				7EDD561B01B453B33504B0EACB2107CC /* SwiftUIPager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CC090F470FFD102620CD8A34A1AA6A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3FA0A10AED590B35311761D18E9247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B8F8B53F8D15F0D3BF5C1A29D063C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AEB5A1CF7EE431948F9DA69CB5D926 /* Buildable.swift in Sources */,
+				6589224F68BD8C4B9A87408A65757216 /* CGPoint+Angle.swift in Sources */,
+				20A49C37D9DB13A7419C98FFCB2C0886 /* ContentLoadingPolicy.swift in Sources */,
+				E02D7ECEFACECD66EA754A4BCE4EB1B8 /* GesturePriority.swift in Sources */,
+				3AA22165E3CFE1068FF6A7BA96A27580 /* OnDeactivateModifier.swift in Sources */,
+				F83DE9763125FEC28AD897D7D0AFEB4D /* Pager+Buildable.swift in Sources */,
+				2C57CF8EF098172064E20C33E3D237A7 /* Pager.swift in Sources */,
+				C75C95FFD747C464EDA06BF4377C07BD /* PagerContent+Buildable.swift in Sources */,
+				36D605AF133989B98F06BA3D20AB35A5 /* PagerContent+Helper.swift in Sources */,
+				9697DBAFE7C1CD1AF10DB1D26B0EE817 /* PagerContent.swift in Sources */,
+				3712162CB999FF1D6FFDE2C5F94E8D76 /* PagerModel.swift in Sources */,
+				DFB5FCD746B24E2447FEE17CA5BC9207 /* PageWrapper.swift in Sources */,
+				A79079D2471C0ACE1B2C7ABCED183125 /* PaginationSensitivity.swift in Sources */,
+				46F147214D28A6C9943C9016C0F1EC8B /* PagingAnimation.swift in Sources */,
+				698A68383AD2239CB270D74F49D0FA79 /* PositionAlignment.swift in Sources */,
+				404C3C3201C28FE5BA45AACBD449E5E7 /* SwiftUIPager-dummy.m in Sources */,
+				749AB7E684EAC8AFAA1257B356F4662C /* SwipeDirection.swift in Sources */,
+				88CB0054E43199211F46A3DD174476FD /* SwipeInteractionArea.swift in Sources */,
+				6FE3B08C55813CD047DCB947B29239AF /* View+Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F65FD138706F7350304345E951624F83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA639DC0C14F1621524D5DD5B974BBDC /* Pods-PlayerMusic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F17FC146EF0DD44050ABDF0961211E99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftUIPager;
+			target = 7EDD561B01B453B33504B0EACB2107CC /* SwiftUIPager */;
+			targetProxy = 38F228A3788ADDC3AC958F4C3419C502 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		227B17FCF03167A6C2B9AB28C5185BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B0A32CCD2FF62CB81597A6E918AC2EF /* Pods-PlayerMusic.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PlayerMusic/Pods-PlayerMusic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PlayerMusic/Pods-PlayerMusic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E7C7A1E2AE2CBD98F673E98259324E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FD9E1614E4A35833BE0DBD3C937C13 /* SwiftUIPager.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftUIPager/SwiftUIPager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftUIPager/SwiftUIPager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftUIPager/SwiftUIPager.modulemap";
+				PRODUCT_MODULE_NAME = SwiftUIPager;
+				PRODUCT_NAME = SwiftUIPager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8658BEB36FD20E717541FC40C3E5811F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A81AAD1A3FE68B5CA99C0DFCEDEC98 /* Pods-PlayerMusic.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PlayerMusic/Pods-PlayerMusic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PlayerMusic/Pods-PlayerMusic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FD3E40A7F3B9DABB465D7091F6F621D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC7FD906EB457DC4F4BD6253E6C9E51 /* SwiftUIPager.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftUIPager/SwiftUIPager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftUIPager/SwiftUIPager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftUIPager/SwiftUIPager.modulemap";
+				PRODUCT_MODULE_NAME = SwiftUIPager;
+				PRODUCT_NAME = SwiftUIPager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91B3FC2F5DB2DC50E5922EECD77E7EAD /* Build configuration list for PBXNativeTarget "SwiftUIPager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3E40A7F3B9DABB465D7091F6F621D7 /* Debug */,
+				3E7C7A1E2AE2CBD98F673E98259324E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9B74BF343CA68CB27A448BDA6821C35 /* Build configuration list for PBXNativeTarget "Pods-PlayerMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				227B17FCF03167A6C2B9AB28C5185BF7 /* Debug */,
+				8658BEB36FD20E717541FC40C3E5811F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
